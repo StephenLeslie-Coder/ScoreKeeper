@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="2"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/decreaseTeam1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            style="@style/MinusButton"
+            android:onClick="Decrease"
+
+            />
+
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Team1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/score1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/Scoretext"
+            />
+
+        <ImageButton
+            android:id="@+id/increaseTeam1"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+           style="@style/PlusButton"
+            android:onClick="Increase"
+
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        >
+        <ImageButton
+            android:id="@+id/decreaseTeam2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            style="@style/MinusButton"
+
+
+            android:onClick="Decrease"
+            />
+        <TextView
+            android:id="@+id/team2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team2"
+            android:textStyle="bold"
+            android:textSize="36sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:id="@+id/score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            style="@style/Scoretext"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/increaseTeam2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="@style/PlusButton"
+            android:onClick="Increase"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
